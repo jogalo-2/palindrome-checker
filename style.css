@@ -1,0 +1,62 @@
+body {      /* Página */
+  font-family: 'Segoe UI', sans-serif;
+  background: #b1b0b094;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {        /* Título */
+  color: #333;
+}
+
+.container {    /* Caixa */
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+input {     /* Entrada */
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+button {    /* Botão */
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {    /* Hover */
+  background-color: #0056b3;
+}
+
+#result {   /* Resultado */
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+#result.palindrome {   /* É Palíndromo */
+  color: green;
+}
+
+#result.not-palindrome {  /* Não é palíndromo */
+  color: red;
+}
